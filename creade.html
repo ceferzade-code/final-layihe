@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new</title>
+    <link rel="stylesheet" href="css/creada.css" />
+  </head>
+  <body>
+    <img src="82582.png" alt="error" />
+    <h1>Yeni iş elanı yaratmağa çabala</h1>
+    <section class="section">
+      <form>
+        <h3>İş yaratma forması</h3>
+        <p>Detalları qeyd et</p>
+        <label for="wornName">Adı</label>
+
+        <br />
+        <input
+          type="text"
+          id="workName"
+          name="workName"
+          placeholder="məs: Front-end Developer"
+        />
+        <br />
+        <br />
+        <label for="workType">Növü</label>
+
+        <br />
+        <select name="workType" id="workType">
+          <option value="muveqqeti">Müveqqəti</option>
+          <option value="kontrakt">Kontrakt</option>
+          <option value="tamis">Tam iş vaxtı</option>
+          <option value="yarimstat">Yarımştat</option>
+          <option value="tecrube">Təcrübə</option>
+          <option value="konullu">Könüllü</option>
+        </select>
+        <br /><br />
+        <label for="company">Şirkət</label><br />
+        <input type="text" id="company" placeholder="məs: Apple" />
+        <br /><br />
+        <label for="companyLog">Şirkətin logosu</label>
+        <br />
+        <input
+          type="url"
+          id="companyLog"
+          placeholder="Choose file No file chosen"
+        />
+        <br /><br />
+        <label for="jobType">Tipi</label>
+        <br />
+        <select name="jobType" id="jobType">
+          <option value="yerinde">Yerinde</option>
+          <option value="remote">Remote</option>
+          <option value="hibrid">Hibrid</option>
+        </select>
+        <br /><br />
+        <label for="location">Lokasiyası</label>
+        <br />
+        <input type="text" id="location" placeholder="Şəhər" />
+        <br /><br />
+        <label for="application">Müraciət üsulu</label>
+        <br />
+        <input
+          type="email"
+          id="application"
+          placeholder="qarışqa@məsələn.com"
+        />
+        ve ya <input type="url" placeholder="https://qarisqa.com" />
+        <br />
+        <br />
+        Açıqlama <br />
+        <textarea
+          name="texstarea"
+          id="texstArea"
+          cols="90%"
+          rows="15"
+        ></textarea>
+        <br />
+        Maaş <br />
+        <input type="number" id="salary" placeholder="yalnız rıqəm qeyd edin" />
+        <br /><br />
+        <input type="submit" class="send" value="Göndər" />
+      </form>
+    </section>
+  </body>
+</html>

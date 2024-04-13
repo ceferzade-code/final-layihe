@@ -1,0 +1,58 @@
+@media only screen and (max-width: 800px) {
+  .section {
+    width: 100%;
+  }
+}
+body{
+    text-align: center;
+}
+img{
+    width: 200px;
+}
+section {
+  width: 801px;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+margin: auto;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#companyLog {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#salary{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.send{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+.send:hover{
+    background-color: rgba(0, 0, 0, 0.844);
+}
