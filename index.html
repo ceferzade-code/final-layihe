@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>final layihe</title>
     <link rel="stylesheet" href="css/main.css" />
-
+    <link rel="stylesheet" href="css/homePace.css" />
+    <link rel="stylesheet" href="css/search.css" />
+<link rel="stylesheet" href="css/footer.css">
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -25,18 +27,109 @@
           <button class="darkModeIcon" style="display: none">
             <i class="fa-regular fa-moon"></i>
           </button>
+          <div class="mode" style="display: none">
+            <p class="lightMode">Light</p>
+            <p class="darkMode">Dark</p>
+            <p>System</p>
+          </div>
         </div>
-        <div class="mode" style="display: none">
-          <p class="lightMode">Light</p>
-          <p class="darkMode">Dark</p>
-          <p>System</p>
-        </div>
+
         <div class="newWork">
-          <a href="creade.html" target="_blank"> <i class="fa-regular fa-star"> </i> İş yarat</a>
+          <a href="creade.html" target="_blank">
+            <i class="fa-regular fa-star"> </i> İş yarat</a
+          >
         </div>
       </div>
     </section>
 
+    <div class="fullWork">
+      <h1>Bütün işlər</h1>
+      <p>Xəyalındakı işi tap.</p>
+    </div>
+    <div class="homePace">
+      <section class="search">
+        <form>
+          <label for="searchCompany">Axtarış</label><br />
+          <input
+            type="text"
+            name="searchCompany"
+            id="searchCompany"
+            placeholder="Başlıq, şirker ve s."
+          />
+          <br /><br />
+          <label for="operating ">İş Rejimi</label><br />
+          <select name="operating" id="operating">
+            <option value="butun">Bütün iş rejimləri</option>
+            <option value="muveqqeti">Müveqqəti</option>
+            <option value="kontrakt">Kontrakt</option>
+            <option value="tamis">Tam iş vaxtı</option>
+            <option value="yarimstat">Yarımştat</option>
+            <option value="tecrube">Təcrübə</option>
+            <option value="konullu">Könüllü</option>
+          </select>
+          <br /><br />
+          <label for="country">Ölkə</label><br />
+          <select name="country" id="country">
+            <option value="butunolke">Bütün ölkələr</option>
+            <option value="sanfrancisco">
+              San Francisco, California, United States
+            </option>
+            <option value="ottava">Ottawa, Ontario, Canada</option>
+            <option value="cupertion">
+              Cupertion, California, United States
+            </option>
+            <option value="redmond">Redmond, Washington, United States</option>
+            <option value="baku">Baku, Baki, Azerbaijan</option></select
+          ><br />
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox">Uzaqdan</label>
+          <br />
+          <input type="submit" id="filtirSubmit" />
+        </form>
+      </section>
+      <section class="workElan">
+        <a href="#">
+          <div class="divImg">
+            <img src="bankR.jpg" alt="error" />
+          </div>
+          <div class="workName">
+            <h2>Backend developer (Java) - Aparıcı mütəxəsis</h2>
+            <p>Bank Respublika ASC</p>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Baku, Baki, Azerbaijan
+            </p>
+            <p>
+              <i class="fa-solid fa-earth-americas"></i> Baku, Baki, Azerbaijan
+            </p>
+            <p>
+              <i class="fa-solid fa-money-bill"></i> 0,00
+              <i class="fa-solid fa-manat-sign"></i>
+            </p>
+          </div>
+          <div class="workTime">
+            <p>Tam iş vaxtı</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <hr>
+    <footer>
+      <section class="footer">
+        <div class="footerDiv1">
+          <h2>Q.</h2>
+          <p>Digər səhifələrdə təmir işləri gedir :)</p>
+        </div>
+        <div class="footerDiv2">
+          <a href="#">Haqqımızda</a>
+          <a href="#"> Əlaqə</a>
+          <a href="#">Xidmət</a>
+          <a href="#">Gizlilik Siyasəti</a>
+        </div>
+      </section>
+      <p>© 2024 Qarışqa. Heç bir haqqımız qorunmur, bütün hüquqlar vəhşicəsinə pozulur.</p>
+      <p><a href="https://www.ilkinsufi.com/">İlkin Sufi Məmmədov</a> tərəfindən hazırlanmışdır</p>
+    </footer>
     <script
       src="https://kit.fontawesome.com/ce92bdfaf6.js"
       crossorigin="anonymous"

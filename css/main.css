@@ -8,6 +8,13 @@ section.headr {
   padding: 24px 8px;
   /* border: 1px solid black; */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+ justify-content: space-around;
 }
 section.headr > div.headrLeft > a {
   text-decoration: none;
@@ -30,10 +37,10 @@ section.headr > div.headrRight > div.modeBtn > button {
 section.headr > div.headrRight > div.modeBtn > button:hover {
   background-color: rgba(128, 128, 128, 0.1);
 }
-section.headr > div.headrRight > div.mode {
+section.headr > div.headrRight > div.modeBtn > div.mode {
   position: absolute;
-  right: 116px;
-  top: 72px;
+  right: 0px;
+  top: 50px;
   border: 1px solid rgba(173, 172, 172, 0.2);
   border-radius: 10px;
   width: 140px;
@@ -41,12 +48,12 @@ section.headr > div.headrRight > div.mode {
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
 }
-section.headr > div.headrRight > div.mode > p {
+section.headr > div.headrRight > div.modeBtn > div.mode > p {
   margin: 2px;
   padding: 8px 16px;
   display: block;
 }
-section.headr > div.headrRight > div.mode > p:hover {
+section.headr > div.headrRight > div.modeBtn > div.mode > p:hover {
   background-color: rgba(128, 128, 128, 0.1);
   margin: 2px;
   border-radius: 10px;
@@ -60,3 +67,8 @@ section.headr > div.headrRight > div.newWork > a {
   padding: 10px 12px;
   display: inline-block;
 }
+@media only screen and (max-width: 1200px) {
+    section.headr {
+        justify-content: space-between;
+    }
+  }

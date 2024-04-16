@@ -1,0 +1,103 @@
+div.fullWork {
+  text-align: center;
+}
+div.fullWork > h1 {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 1000px) {
+  div.fullWork > h1 {
+    font-size: 28px;
+  }
+}
+div.fullWork > p {
+  font-size: 20px;
+  color: gray;
+}
+div.homePace {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+section.workElan {
+  flex: 5;
+  margin: 8px;
+}
+section.workElan > a {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 12px;
+  align-items: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+}
+section.workElan > a > div > p {
+  color: gray;
+}
+section.workElan > a > * {
+  margin: 0;
+}
+section.workElan > a > div.divImg {
+  flex: 2;
+}
+section.workElan > a > div.divImg > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+section.workElan > a > div.workTime > p {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #cccccc6e;
+  padding: 8px;
+  display: inline-block;
+}
+section.workElan > a > div.workName {
+  flex: 3;
+}
+
+section.workElan > a > div.workTime {
+  flex: 2;
+}
+section.search {
+  border: 1px solid gray;
+  border-radius: 12px;
+  flex: 2;
+  margin: 8px 0 8px 8px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.918);
+}
+@media only screen and (max-width: 800px) {
+    section.search{
+        width: 100%;
+    }
+  }

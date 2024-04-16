@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>new</title>
     <link rel="stylesheet" href="css/creada.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <img src="82582.png" alt="error" />
+    <section class="headr">
+      <div class="headrLeft">
+        <a href="index.html">Qarışqa</a>
+      </div>
+      <div class="headrRight">
+        <div class="modeBtn">
+          <button class="lightModeIcon">
+            <i class="fa-regular fa-sun"></i>
+          </button>
+          <button class="darkModeIcon" style="display: none">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+        <div class="mode" style="display: none">
+          <p class="lightMode">Light</p>
+          <p class="darkMode">Dark</p>
+          <p>System</p>
+        </div>
+        <div class="newWork">
+          <a href="creade.html" target="_blank">
+            <i class="fa-regular fa-star"> </i> İş yarat</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <img src="monalis.png" alt="error" />
     <h1>Yeni iş elanı yaratmağa çabala</h1>
     <section class="section">
       <form>
@@ -28,6 +61,7 @@
 
         <br />
         <select name="workType" id="workType">
+          <option value="" disabled selected hidden>Secim edin</option>
           <option value="muveqqeti">Müveqqəti</option>
           <option value="kontrakt">Kontrakt</option>
           <option value="tamis">Tam iş vaxtı</option>
@@ -50,6 +84,7 @@
         <label for="jobType">Tipi</label>
         <br />
         <select name="jobType" id="jobType">
+          <option value="" disabled selected hidden>Secim edin</option>
           <option value="yerinde">Yerinde</option>
           <option value="remote">Remote</option>
           <option value="hibrid">Hibrid</option>
@@ -59,23 +94,26 @@
         <br />
         <input type="text" id="location" placeholder="Şəhər" />
         <br /><br />
+
         <label for="application">Müraciət üsulu</label>
         <br />
-        <input
-          type="email"
-          id="application"
-          placeholder="qarışqa@məsələn.com"
-        />
-        ve ya <input type="url" placeholder="https://qarisqa.com" />
+        <div class="applicationDiv">
+          <input
+            type="email"
+            class="application"
+            placeholder="qarışqa@məsələn.com"
+          />
+          <p>ve ya</p>
+          <input
+            type="url"
+            class="application"
+            placeholder="https://qarisqa.com"
+          />
+        </div>
         <br />
         <br />
         Açıqlama <br />
-        <textarea
-          name="texstarea"
-          id="texstArea"
-          cols="90%"
-          rows="15"
-        ></textarea>
+        <textarea name="texstarea" id="textArea"></textarea>
         <br />
         Maaş <br />
         <input type="number" id="salary" placeholder="yalnız rıqəm qeyd edin" />
@@ -83,5 +121,33 @@
         <input type="submit" class="send" value="Göndər" />
       </form>
     </section>
+
+    <hr />
+    <footer>
+      <section class="footer">
+        <div class="footerDiv1">
+          <h2>Q.</h2>
+          <p>Digər səhifələrdə təmir işləri gedir :)</p>
+        </div>
+        <div class="footerDiv2">
+          <a href="#">Haqqımızda</a>
+          <a href="#"> Əlaqə</a>
+          <a href="#">Xidmət</a>
+          <a href="#">Gizlilik Siyasəti</a>
+        </div>
+      </section>
+      <p>
+        © 2024 Qarışqa. Heç bir haqqımız qorunmur, bütün hüquqlar vəhşicəsinə
+        pozulur.
+      </p>
+      <p>
+        <a href="https://www.ilkinsufi.com/">İlkin Sufi Məmmədov</a> tərəfindən
+        hazırlanmışdır
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/ce92bdfaf6.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

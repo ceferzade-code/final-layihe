@@ -1,0 +1,39 @@
+footer{
+    max-width: 1000px;
+   margin: auto;
+   padding: 12px;
+}
+footer>section.footer{
+    display: flex;
+    align-items: center;
+}
+footer>section.footer>div{
+    text-align: left;
+    flex: 1;
+}
+footer>section.footer>div>p{
+    color: gray;
+    
+}
+footer>section.footer>div.footerDiv2{
+    text-align: right;
+}
+footer>section.footer>div>a{
+    text-decoration: none;
+    color: gray;
+    padding: 8px;
+    display: inline-block;
+    
+}
+footer>section.footer>div>a:hover{
+    text-decoration: underline;
+    
+}
+footer>p{
+    text-align: center;
+    color: gray;
+}
+footer>p>a{
+    text-decoration: none;
+    color: gray;
+}
