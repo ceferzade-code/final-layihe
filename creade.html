@@ -61,13 +61,13 @@
 
         <br />
         <select name="workType" id="workType">
-          <option value="" disabled selected hidden>Secim edin</option>
-          <option value="muveqqeti">Müveqqəti</option>
-          <option value="kontrakt">Kontrakt</option>
-          <option value="tamis">Tam iş vaxtı</option>
-          <option value="yarimstat">Yarımştat</option>
-          <option value="tecrube">Təcrübə</option>
-          <option value="konullu">Könüllü</option>
+          <option disabled selected hidden>Secim edin</option>
+          <option>Müveqqəti</option>
+          <option>Kontrakt</option>
+          <option>Tam iş vaxtı</option>
+          <option>Yarımştat</option>
+          <option>Təcrübə</option>
+          <option>Könüllü</option>
         </select>
         <br /><br />
         <label for="company">Şirkət</label><br />
@@ -84,10 +84,10 @@
         <label for="jobType">Tipi</label>
         <br />
         <select name="jobType" id="jobType">
-          <option value="" disabled selected hidden>Secim edin</option>
-          <option value="yerinde">Yerinde</option>
-          <option value="remote">Remote</option>
-          <option value="hibrid">Hibrid</option>
+          <option disabled selected hidden>Secim edin</option>
+          <option>Yerinde</option>
+          <option>Remote</option>
+          <option>Hibrid</option>
         </select>
         <br /><br />
         <label for="location">Lokasiyası</label>
@@ -116,9 +116,14 @@
         <textarea name="texstarea" id="textArea"></textarea>
         <br />
         Maaş <br />
-        <input type="number" id="salary" placeholder="yalnız rıqəm qeyd edin" />
+        <input type="number" id="salary" placeholder="yalnız rəqəm qeyd edin" />
         <br /><br />
-        <input type="submit" class="send" value="Göndər" />
+        <input
+          type="submit"
+          class="send"
+          onclick="myFunction()"
+          value="Göndər"
+        />
       </form>
     </section>
 
@@ -145,6 +150,8 @@
         hazırlanmışdır
       </p>
     </footer>
+
+    <script src="js/local.js"></script>
     <script
       src="https://kit.fontawesome.com/ce92bdfaf6.js"
       crossorigin="anonymous"
