@@ -15,27 +15,29 @@
   </head>
   <body>
     <section class="headr">
-      <div class="headrLeft">
-        <a href="index.html">Qarışqa</a>
-      </div>
-      <div class="headrRight">
-        <div class="modeBtn">
-          <button class="lightModeIcon">
-            <i class="fa-regular fa-sun"></i>
-          </button>
-          <button class="darkModeIcon" style="display: none">
-            <i class="fa-regular fa-moon"></i>
-          </button>
+      <div class="headrDiv">
+        <div class="headrLeft">
+          <a href="index.html">Qarışqa</a>
         </div>
-        <div class="mode" style="display: none">
-          <p class="lightMode">Light</p>
-          <p class="darkMode">Dark</p>
-          <p>System</p>
-        </div>
-        <div class="newWork">
-          <a href="creade.html" target="_blank">
-            <i class="fa-regular fa-star"> </i> İş yarat</a
-          >
+        <div class="headrRight">
+          <div class="modeBtn">
+            <button class="lightModeIcon">
+              <i class="fa-regular fa-sun"></i>
+            </button>
+            <button class="darkModeIcon" style="display: none">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+            <div class="mode" style="display: none">
+              <p class="lightMode">Light</p>
+              <p class="darkMode">Dark</p>
+              <p>System</p>
+            </div>
+          </div>
+          <div class="newWork">
+            <a href="creade.html" target="_blank">
+              <i class="fa-regular fa-star"> </i> İş yarat</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -43,7 +45,7 @@
     <img src="monalis.png" alt="error" />
     <h1>Yeni iş elanı yaratmağa çabala</h1>
     <section class="section">
-      <form>
+      <form onsubmit="createSubmit(event)" novalidate>
         <h3>İş yaratma forması</h3>
         <p>Detalları qeyd et</p>
         <label for="wornName">Adı</label>
@@ -60,7 +62,7 @@
         <label for="workType">Növü</label>
 
         <br />
-        <select name="workType" id="workType">
+        <select name="workType" id="workType" required>
           <option disabled selected hidden>Secim edin</option>
           <option>Müveqqəti</option>
           <option>Kontrakt</option>
@@ -71,19 +73,20 @@
         </select>
         <br /><br />
         <label for="company">Şirkət</label><br />
-        <input type="text" id="company" placeholder="məs: Apple" />
+        <input type="text" id="company" required placeholder="məs: Apple" />
         <br /><br />
         <label for="companyLog">Şirkətin logosu</label>
         <br />
         <input
           type="url"
           id="companyLog"
+          required
           placeholder="Choose file No file chosen"
         />
         <br /><br />
         <label for="jobType">Tipi</label>
         <br />
-        <select name="jobType" id="jobType">
+        <select name="jobType" id="jobType" required>
           <option disabled selected hidden>Secim edin</option>
           <option>Yerinde</option>
           <option>Remote</option>
@@ -92,7 +95,7 @@
         <br /><br />
         <label for="location">Lokasiyası</label>
         <br />
-        <input type="text" id="location" placeholder="Şəhər" />
+        <input type="text" id="location" required placeholder="Şəhər" />
         <br /><br />
 
         <label for="application">Müraciət üsulu</label>
@@ -116,14 +119,16 @@
         <textarea name="texstarea" id="textArea"></textarea>
         <br />
         Maaş <br />
-        <input type="number" id="salary" placeholder="yalnız rəqəm qeyd edin" />
-        <br /><br />
         <input
-          type="submit"
-          class="send"
-          onclick="myFunction()"
-          value="Göndər"
+          type="number"
+          required
+          id="salary"
+          placeholder="yalnız rəqəm qeyd edin"
+          min="3000"
         />
+        <br /><br />
+
+        <input type="submit" class="send" value="Göndər" />
       </form>
     </section>
 
@@ -150,8 +155,9 @@
         hazırlanmışdır
       </p>
     </footer>
-
+    <script src="js/tools.js"></script>
     <script src="js/local.js"></script>
+    <script src="js/mode.js"></script>
     <script
       src="https://kit.fontawesome.com/ce92bdfaf6.js"
       crossorigin="anonymous"

@@ -3,9 +3,6 @@ body {
   padding: 0;
 }
 section.headr {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 8px;
   /* border: 1px solid black; */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
   position: sticky;
@@ -14,30 +11,41 @@ section.headr {
   left: 0;
   z-index: 1;
   background-color: white;
- justify-content: space-around;
+  /* justify-content: space-around; */
 }
-section.headr > div.headrLeft > a {
+section.headr > div.headrDiv {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 8px;
+  margin: auto;
+}
+section.headr > div.headrDiv > div.headrLeft > a {
   text-decoration: none;
   color: black;
   font-size: 25px;
 }
-section.headr > div.headrRight {
+section.headr > div.headrDiv > div.headrRight {
   display: flex;
 }
-section.headr > div.headrRight > div.modeBtn {
+section.headr > div.headrDiv > div.headrRight > div.modeBtn {
   position: relative;
   padding-right: 8px;
 }
-section.headr > div.headrRight > div.modeBtn > button {
+section.headr > div.headrDiv > div.headrRight > div.modeBtn * {
+  cursor: pointer;
+}
+
+section.headr > div.headrDiv > div.headrRight > div.modeBtn > button {
   padding: 8px;
   font-size: 20px;
   border-radius: 8px;
   border: 1px solid gray;
 }
-section.headr > div.headrRight > div.modeBtn > button:hover {
+section.headr > div.headrDiv > div.headrRight > div.modeBtn > button:hover {
   background-color: rgba(128, 128, 128, 0.1);
 }
-section.headr > div.headrRight > div.modeBtn > div.mode {
+section.headr > div.headrDiv > div.headrRight > div.modeBtn > div.mode {
   position: absolute;
   right: 0px;
   top: 50px;
@@ -48,17 +56,22 @@ section.headr > div.headrRight > div.modeBtn > div.mode {
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
 }
-section.headr > div.headrRight > div.modeBtn > div.mode > p {
+section.headr > div.headrDiv > div.headrRight > div.modeBtn > div.mode > p {
   margin: 2px;
   padding: 8px 16px;
   display: block;
 }
-section.headr > div.headrRight > div.modeBtn > div.mode > p:hover {
+section.headr
+  > div.headrDiv
+  > div.headrRight
+  > div.modeBtn
+  > div.mode
+  > p:hover {
   background-color: rgba(128, 128, 128, 0.1);
   margin: 2px;
   border-radius: 10px;
 }
-section.headr > div.headrRight > div.newWork > a {
+section.headr > div.headrDiv > div.headrRight > div.newWork > a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -67,8 +80,11 @@ section.headr > div.headrRight > div.newWork > a {
   padding: 10px 12px;
   display: inline-block;
 }
-@media only screen and (max-width: 1200px) {
-    section.headr {
-        justify-content: space-between;
-    }
+section.headr > div.headrDiv > div.headrRight > div.newWork > a:hover {
+  background-color: rgba(0, 0, 0, 0.806);
+}
+/* @media only screen and (max-width: 1200px) {
+  section.headr {
+    justify-content: space-between;
   }
+} */
