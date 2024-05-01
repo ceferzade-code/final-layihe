@@ -1,6 +1,7 @@
 .detailsDiv {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 section.workElan {
   max-width: 1000px;
@@ -38,18 +39,31 @@ section.workElan > div.detailsDiv > div.divImg > img {
 .workTime > div {
   align-items: flex-end;
 }
-.workTime > div > a {
+.workTime > div > p {
   color: white;
   background-color: black;
   padding: 10px;
   border-radius: 8px;
   display: inline-block;
+  cursor: pointer;
 }
-.workTime > div > a:hover {
+.workTime > div > p:hover {
   background-color: rgba(0, 0, 0, 0.847);
   padding: 11px 10px;
 }
 .workName {
   flex: 1;
 }
-
+.workName>*{
+margin: 8px 0px;
+}
+.workName>p{
+  color: gray;
+}
+.workName>p:nth-child(2){
+  color: black;
+}
+.workName>p>i{
+  width: 20px;
+  text-align: center;
+}

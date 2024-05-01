@@ -17,7 +17,7 @@ function isHashExist() {
     for (let i = 0; i < list.length; i++) {
       if (list[i].id == id) {
         foundJob = list[i];
-        
+
         let detailsHtml = "";
         detailsHtml = `
         <div class = "detailsDiv">
@@ -38,16 +38,19 @@ function isHashExist() {
                  </p>
                </div>
                <div class="workTime">
-                 <a href="#">Müraciət et</a>
-                
+                 <a href="mailto:${list[i].application}">Müraciət et</a>
+                 <div>
+                <p id = "deletList" onclick="delFunction()"><i class="fa-solid fa-trash-can"></i></p>
+                 <p><i class="fa-solid fa-pen-to-square"></i></p>
+                </div>
                </div>
              </div>
              <p>
              ${list[i].textarea}
              </p>`;
-   
+
         document.querySelector(".workElan").innerHTML = detailsHtml;
-       
+        
         break;
       }
     }
@@ -57,4 +60,7 @@ function isHashExist() {
   }
 
   return null;
+}
+function delFunction() {
+          
 }

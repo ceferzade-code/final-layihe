@@ -18,6 +18,7 @@ function renderJobs(filter) {
 <div class="workName">
   <h2> ${jobList[i].workName}</h2>
   <p> ${jobList[i].company}</p>
+  <br>
   <p>
     <i class="fa-solid fa-location-dot"></i> ${jobList[i].jobType}
   </p>
@@ -31,26 +32,18 @@ function renderJobs(filter) {
 </div>
 <div class="workTime">
   <p> ${jobList[i].workType}</p>
-  <div>
-  <p id = "deletList" onclick="delFunction()"><i class="fa-solid fa-trash-can"></i></p>
-  <p><i class="fa-solid fa-pen-to-square"></i></p>
-</div>
-  <p><i class="fa-regular fa-clock"></i> 3 minuts ago</p>
+ 
+  <p class = "elanTime"><i class="fa-regular fa-clock"></i> 3 
+  minuts ago</p>
 </div>
 </a>`;
   }
 
   document.querySelector(".workElan").innerHTML = renderHtml;
 }
-function delFunction() {
-  
-}
 
 
 renderJobs({});
-
-
-
 
 // function x() {
 //   let filter = {};

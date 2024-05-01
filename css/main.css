@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 section.headr {
   /* border: 1px solid black; */
@@ -40,7 +41,7 @@ section.headr > div.headrDiv > div.headrRight > div.modeBtn > button {
   padding: 8px;
   font-size: 20px;
   border-radius: 8px;
-  border: 1px solid gray;
+  border: 1px solid rgba(175, 170, 170, 0.637);
 }
 section.headr > div.headrDiv > div.headrRight > div.modeBtn > button:hover {
   background-color: rgba(128, 128, 128, 0.1);

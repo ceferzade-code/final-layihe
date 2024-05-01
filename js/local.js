@@ -21,16 +21,18 @@ function createSubmit(e) {
     salary: document.querySelector("#salary").value,
     companyLog: document.querySelector("#companyLog").value,
     textarea: document.querySelector("#textArea").value,
+    application: document.querySelector(".application").value,
   };
   if (
-    workNameInp.value.trim() == "" &&
-    document.querySelector("#workType").value.trim() == "" &&
-    document.querySelector("#company").value.trim() == "" &&
-    document.querySelector("#jobType").value.trim() == "" &&
-    document.querySelector("#location").value.trim() == "" &&
-    document.querySelector("#salary").value.trim() == "" &&
-    document.querySelector("#companyLog").value.trim() == "" &&
-    document.querySelector("#textArea").value.trim() == ""
+    workNameInp.value.trim() == "" ||
+    document.querySelector("#workType").value.trim() == "" ||
+    document.querySelector("#company").value.trim() == "" ||
+    document.querySelector("#jobType").value.trim() == "" ||
+    document.querySelector("#location").value.trim() == "" ||
+    document.querySelector("#salary").value.trim() == "" ||
+    document.querySelector("#companyLog").value.trim() == "" ||
+    document.querySelector("#textArea").value.trim() == "" ||
+    document.querySelector(".application").value.trim() == ""
   ) {
     alert("Butun detallari qeyd edin");
   } else {
@@ -49,4 +51,5 @@ function createSubmit(e) {
   document.querySelector("#salary").value = "";
   document.querySelector("#companyLog").value = "";
   document.querySelector("#textArea").value = "";
+  document.querySelector(".application").value = "";
 }

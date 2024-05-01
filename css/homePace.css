@@ -18,12 +18,14 @@ div.homePace {
   display: flex;
   max-width: 1000px;
   margin: auto;
-  align-items: flex-start
+  align-items: flex-start;
 }
 section.workElan {
   flex: 5;
   margin: 8px;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 section.workElan > a {
   display: flex;
@@ -33,21 +35,20 @@ section.workElan > a {
   padding: 12px;
   color: black;
   text-decoration: none;
-
-
+  gap: 12px;
 }
 section.workElan > a > div > p {
   color: gray;
 }
-section.workElan > a > * {
-  margin: 0;
+section.workElan > a > div > * {
+  margin: 5px;
 }
 section.workElan > a > div.divImg {
   width: 100px;
   height: 100px;
 }
 section.workElan > a > div.divImg > img {
- width: 100%;
+  width: 100%;
   border-radius: 12px;
   margin-right: 12px;
 }
@@ -55,13 +56,18 @@ section.workElan > a > div.workTime > p {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #cccccc6e;
-  padding: 8px;
+  padding: 2px 0px;
   display: inline-block;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
-section.workElan > a > div.workTime > p:last-child{
+section.workElan > a > div.workTime > p:last-child {
   background-color: inherit;
   border: 0;
-  color: black;
+  font-size: 15px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  /* color: black; */
 }
 section.workElan > a > div.workName {
   flex: 1;
@@ -72,7 +78,7 @@ section.workElan > a > div.workTime {
   flex-direction: column;
   justify-content: space-between;
 }
-section.workElan > a > div.workTime >p{
+section.workElan > a > div.workTime > p {
   text-align: center;
 }
 section.search {
@@ -107,11 +113,19 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 12px;
 }
+
 input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.918);
 }
-@media only screen and (max-width: 800px) {
-    section.search{
-        width: 100%;
-    }
+@media only screen and (max-width: 760px) {
+  section.search {
+    width: 100%;
+  
   }
+  div.homePace {
+    flex-direction: column;
+  }
+  section.workElan {
+    width: 100%;
+  }
+}
