@@ -1,5 +1,12 @@
 let obj = isHashExist();
 if (obj) {
+  function delFunction() {
+    for (let i = 0; i < obj.length; i++) {
+      if (obj[i].id == id) {
+        localStorage.removeItem(`${obj[i]}`);
+      }
+    }
+  }
 }
 
 function isHashExist() {
@@ -41,7 +48,7 @@ function isHashExist() {
                  <a href="mailto:${list[i].application}">Müraciət et</a>
                  <div>
                 <p id = "deletList" onclick="delFunction()"><i class="fa-solid fa-trash-can"></i></p>
-                 <p><i class="fa-solid fa-pen-to-square"></i></p>
+                <a href="edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
                 </div>
                </div>
              </div>
@@ -50,7 +57,9 @@ function isHashExist() {
              </p>`;
 
         document.querySelector(".workElan").innerHTML = detailsHtml;
+
         
+
         break;
       }
     }
@@ -62,5 +71,9 @@ function isHashExist() {
   return null;
 }
 function delFunction() {
-          
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id == id) {
+      localStorage.removeItem(`${list[i]}`);
+    }
+  }
 }
