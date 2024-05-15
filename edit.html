@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/creada.css">
+
+  </head>
+  <body>
+    <section class="headr">
+      <div class="headrDiv">
+        <div class="headrLeft">
+          <a href="index.html">Qarışqa</a>
+        </div>
+        <div class="headrRight">
+          <div class="modeBtn">
+            <button class="lightModeIcon">
+              <i class="fa-regular fa-sun"></i>
+            </button>
+            <button class="darkModeIcon" style="display: none">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+            <div class="mode" style="display: none">
+              <p class="lightMode">Light</p>
+              <p class="darkMode">Dark</p>
+              <p>System</p>
+            </div>
+          </div>
+
+          <div class="newWork">
+            <a href="creade.html" target="_blank">
+              <i class="fa-regular fa-star"> </i> İş yarat</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="editSection">
+        <img src="monalis.png" alt="error" />
+    <h1>Yeni iş elanı yaratmağa çabala</h1>
+    <section class="section">
+      <form onsubmit="createSubmit(event)" novalidate>
+        <h3>İş yaratma forması</h3>
+        <p>Detalları qeyd et</p>
+        <label for="wornName">Adı</label>
+
+        <br />
+        <input
+          type="text"
+          id="workName"
+          name="workName"
+          placeholder="məs: Front-end Developer"
+        />
+        <br />
+        <br />
+        <label for="workType">Növü</label>
+
+        <br />
+        <select name="workType" id="workType" required>
+          <option disabled selected hidden>Secim edin</option>
+          <option>Müveqqəti</option>
+          <option>Kontrakt</option>
+          <option>Tam iş vaxtı</option>
+          <option>Yarımştat</option>
+          <option>Təcrübə</option>
+          <option>Könüllü</option>
+        </select>
+        <br /><br />
+        <label for="company">Şirkət</label><br />
+        <input type="text" id="company" required placeholder="məs: Apple" />
+        <br /><br />
+        <label for="companyLog">Şirkətin logosu</label>
+        <br />
+        <input
+          type="url"
+          id="companyLog"
+          required
+          placeholder="Choose file No file chosen"
+        />
+        <br /><br />
+        <label for="jobType">Tipi</label>
+        <br />
+        <select name="jobType" id="jobType" required>
+          <option disabled selected hidden>Secim edin</option>
+          <option>Yerinde</option>
+          <option>Remote</option>
+          <option>Hibrid</option>
+        </select>
+        <br /><br />
+        <label for="location">Lokasiyası</label>
+        <br />
+        <input type="text" id="location" required placeholder="Şəhər" />
+        <br /><br />
+
+        <label for="application">Müraciət üsulu</label>
+        <br />
+        <div class="applicationDiv">
+          <input
+            type="email"
+            class="application"
+            placeholder="qarışqa@məsələn.com"
+          />
+          <p style="color: black;">ve ya</p>
+          <input
+            type="url"
+            class="application"
+            placeholder="https://qarisqa.com"
+          />
+        </div>
+        <br />
+        <br />
+        Açıqlama <br />
+        <textarea name="texstarea" id="textArea"></textarea>
+        <br />
+        Maaş <br />
+        <input
+          type="number"
+          required
+          id="salary"
+          placeholder="yalnız rəqəm qeyd edin"
+          min="3000"
+        />
+        <br /><br />
+
+        <input type="submit" class="send" value="Göndər" />
+      </form>
+    </section>
+
+    </section>
+
+    <footer>
+      <section class="footer">
+        <div class="footerDiv1">
+          <h2>Q.</h2>
+          <p>Digər səhifələrdə təmir işləri gedir :)</p>
+        </div>
+        <div class="footerDiv2">
+          <a href="#">Haqqımızda</a>
+          <a href="#"> Əlaqə</a>
+          <a href="#">Xidmət</a>
+          <a href="#">Gizlilik Siyasəti</a>
+        </div>
+      </section>
+      <p>
+        © 2024 Qarışqa. Heç bir haqqımız qorunmur, bütün hüquqlar vəhşicəsinə
+        pozulur.
+      </p>
+      <p>
+        <a href="https://www.ilkinsufi.com/">İlkin Sufi Məmmədov</a> tərəfindən
+        hazırlanmışdır
+      </p>
+    </footer>
+
+
+
+    <script
+    src="https://kit.fontawesome.com/ce92bdfaf6.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+  </body>
 </html>

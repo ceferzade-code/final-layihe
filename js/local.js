@@ -1,7 +1,6 @@
 function createSubmit(e) {
   e.preventDefault();
 
-  let workNameInp = document.querySelector("#workName");
   let joblis = getLocaleData("joblist");
   let maxId = 0;
 
@@ -11,85 +10,101 @@ function createSubmit(e) {
     }
   }
 
+  let workNameInp = document.querySelector("#workName");
+  let workTypeInp = document.querySelector("#workType");
+  let companyInp = document.querySelector("#company");
+  let jobTypeInp = document.querySelector("#jobType");
+  let locationInp = document.querySelector("#location");
+  let salaryInp = document.querySelector("#salary");
+  let companyLogInp = document.querySelector("#companyLog");
+  let textAreaInp = document.querySelector("#textArea");
+  let applicationInp = document.querySelector(".application");
+
   let x = {
     id: maxId + 1,
     workName: workNameInp.value,
-    workType: document.querySelector("#workType").value,
-    company: document.querySelector("#company").value,
-    jobType: document.querySelector("#jobType").value,
-    location: document.querySelector("#location").value,
-    salary: document.querySelector("#salary").value,
-    companyLog: document.querySelector("#companyLog").value,
-    textarea: document.querySelector("#textArea").value,
-    application: document.querySelector(".application").value,
+    workType: workTypeInp.value,
+    company: companyInp.value,
+    jobType: jobTypeInp.value,
+    location: locationInp.value,
+    salary: salaryInp.value,
+    companyLog: companyLogInp.value,
+    textarea: textAreaInp.value,
+    application: applicationInp.value,
   };
 
   if (workNameInp.value.trim() == "") {
-    workNameInp.after("<p>Ish adini qeyd edin !</p>");
-    
+    workNameInp.insertAdjacentHTML("afterend", "<p>Ish adini qeyd edin !</p>");
   }
 
   if (
-    document.querySelector("#workType").value.trim() == "" ||
-    document.querySelector("#workType").value.trim() == "Secim edin"
+    workTypeInp.value.trim() == "" ||
+    workTypeInp.value.trim() == "Secim edin"
   ) {
-    document.querySelector("#workType").after("ish novun sechin !");
+    workTypeInp.insertAdjacentHTML("afterend", "<p>ish novun sechin !</p>");
   }
-  if (document.querySelector("#company").value.trim() == "") {
-    document.querySelector("#company").after("Shirket sechin !");
+  if (companyInp.value.trim() == "") {
+    companyInp.insertAdjacentHTML("afterend", "<p>Shirket sechin !</p>");
   }
   if (
-    document.querySelector("#jobType").value.trim() == "" ||
-    document.querySelector("#jobType").value.trim() == "Secim edin"
+    jobTypeInp.value.trim() == "" ||
+    jobTypeInp.value.trim() == "Secim edin"
   ) {
-    document.querySelector("#jobType").after("Ishin tipin sechin !");
-  }
-  if (document.querySelector("#location").value.trim() == "") {
-    document.querySelector("#location").after("Sheher sechin !");
+    jobTypeInp.insertAdjacentHTML("afterend", "<p>Ishin tipin sechin !</p>");
 
+    console.log();
   }
-  if (document.querySelector("#salary").value.trim() == "") {
-    document.querySelector("#salary").after(" Maash sechin !");
+  if (locationInp.value.trim() == "") {
+    locationInp.insertAdjacentHTML("afterend", "<p>Sheher sechin !</p>");
   }
-  if (document.querySelector("#companyLog").value.trim() == "") {
-    document.querySelector("#companyLog").after("Shirket loqosu daxil edin!");
+  if (salaryInp.value.trim() == "") {
+    salaryInp.insertAdjacentHTML("afterend", "<p>Maash sechin !</p>");
   }
-  if (document.querySelector("#textArea").value.trim() == "") {
-    document.querySelector("#textArea").after("Umumi melumatlar qeyd edin");
+  if (companyLogInp.value.trim() == "") {
+    companyLogInp.insertAdjacentHTML(
+      "afterend",
+      "<p>Shirket loqosu daxil edin!</p>"
+    );
   }
-  if (document.querySelector(".application").value.trim() == "") {
-    document.querySelector(".application").after("Mail qeyd edin !");
+  if (textAreaInp.value.trim() == "") {
+    textAreaInp.insertAdjacentHTML(
+      "afterend",
+      "<p>Umumi melumatlar qeyd edin !</p>"
+    );
+  }
+  if (applicationInp.value.trim() == "") {
+    applicationInp.insertAdjacentHTML("afterend", "<p>Mail qeyd edin !</p>");
   }
 
   // joblis.push(x);
 
   if (
     workNameInp.value.trim() != "" &&
-    document.querySelector("#workType").value.trim() != "" &&
-    document.querySelector("#company").value.trim()!= "" &&
-    document.querySelector("#jobType").value.trim() != "" &&
-    document.querySelector("#location").value.trim() != "" &&
-    document.querySelector("#salary").value.trim() != "" &&
-    document.querySelector("#companyLog").value.trim()!= "" &&
-    document.querySelector("#textArea").value.trim() != "" &&
-    document.querySelector(".application").value.trim() != "" &&
+    workTypeInp.value.trim() != "" &&
+    companyInp.value.trim() != "" &&
+    jobTypeInp.value.trim() != "" &&
+    locationInp.value.trim() != "" &&
+    salaryInp.value.trim() != "" &&
+    companyLogInp.value.trim() != "" &&
+    textAreaInp.value.trim() != "" &&
+    applicationInp.value.trim() != ""
   ) {
     // alert("Butun detallari qeyd edin");\
 
     joblis.push(x);
-  } 
 
-  console.log(joblis);
+    localStorage.setItem("joblist", JSON.stringify(joblis));
 
-  localStorage.setItem("joblist", JSON.stringify(joblis));
+    workNameInp.value = "";
+    workTypeInp.value = "";
+    companyInp.value = "";
+    jobTypeInp.value = "";
+    locationInp.value = "";
+    salaryInp.value = "";
+    companyLogInp.value = "";
+    textAreaInp.value = "";
+    applicationInp.value = "";
+  }
 
-  workNameInp.value = "";
-  document.querySelector("#workType").value = "";
-  document.querySelector("#company").value = "";
-  document.querySelector("#jobType").value = "";
-  document.querySelector("#location").value = "";
-  document.querySelector("#salary").value = "";
-  document.querySelector("#companyLog").value = "";
-  document.querySelector("#textArea").value = "";
-  document.querySelector(".application").value = "";
+  // console.log(joblis);
 }

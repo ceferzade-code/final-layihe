@@ -1,12 +1,37 @@
 let obj = isHashExist();
 if (obj) {
-  function delFunction() {
-    for (let i = 0; i < obj.length; i++) {
-      if (obj[i].id == id) {
-        localStorage.removeItem(`${obj[i]}`);
-      }
-    }
-  }
+  let detailsHtml = "";
+  detailsHtml = `
+  <div class = "detailsDiv">
+         <div class="divImg">
+           <img src="${obj.companyLog}" alt="error" />
+         </div>
+         <div class="workName">
+           <h2>${obj.workName}</h2>
+           <p>${obj.company}</p>
+           <p><i class="fa-solid fa-briefcase"></i> ${obj.workType}</p>
+           <p><i class="fa-solid fa-location-dot"></i> ${obj.jobType}</p>
+           <p>
+             <i class="fa-solid fa-earth-americas"></i> ${obj.location}
+           </p>
+           <p>
+             <i class="fa-solid fa-money-bill"></i> ${obj.salary}
+             <i class="fa-solid fa-manat-sign"></i>
+           </p>
+         </div>
+         <div class="workTime">
+           <a href="mailto:${obj.application}">Müraciət et</a>
+           <div>
+          <p id = "deletList" onclick="delFunction(event)"><i class="fa-solid fa-trash-can"></i></p>
+          <a href="edit.html#${obj.id}"><i class="fa-solid fa-pen-to-square"></i></a>
+          </div>
+         </div>
+       </div>
+       <p>
+       ${obj.textarea}
+       </p>`;
+
+  document.querySelector(".workElan").innerHTML = detailsHtml;
 }
 
 function isHashExist() {
@@ -19,46 +44,11 @@ function isHashExist() {
 
   if (id) {
     let list = getLocaleData("joblist");
-    console.log(list);
+    // console.log(list);
     let foundJob = null;
     for (let i = 0; i < list.length; i++) {
       if (list[i].id == id) {
         foundJob = list[i];
-
-        let detailsHtml = "";
-        detailsHtml = `
-        <div class = "detailsDiv">
-               <div class="divImg">
-                 <img src="${list[i].companyLog}" alt="error" />
-               </div>
-               <div class="workName">
-                 <h2>${list[i].workName}</h2>
-                 <p>${list[i].company}</p>
-                 <p><i class="fa-solid fa-briefcase"></i> ${list[i].workType}</p>
-                 <p><i class="fa-solid fa-location-dot"></i> ${list[i].jobType}</p>
-                 <p>
-                   <i class="fa-solid fa-earth-americas"></i> ${list[i].location}
-                 </p>
-                 <p>
-                   <i class="fa-solid fa-money-bill"></i> ${list[i].salary}
-                   <i class="fa-solid fa-manat-sign"></i>
-                 </p>
-               </div>
-               <div class="workTime">
-                 <a href="mailto:${list[i].application}">Müraciət et</a>
-                 <div>
-                <p id = "deletList" onclick="delFunction()"><i class="fa-solid fa-trash-can"></i></p>
-                <a href="edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
-                </div>
-               </div>
-             </div>
-             <p>
-             ${list[i].textarea}
-             </p>`;
-
-        document.querySelector(".workElan").innerHTML = detailsHtml;
-
-        
 
         break;
       }
@@ -71,9 +61,19 @@ function isHashExist() {
   return null;
 }
 function delFunction() {
+  let list = JSON.parse(localStorage.getItem("joblist"));
+
   for (let i = 0; i < list.length; i++) {
-    if (list[i].id == id) {
-      localStorage.removeItem(`${list[i]}`);
+    if (list[i].id == obj.id) {
+      console.log(list[i].id);
+      list[i].remove;
+    
     }
+   
+
   }
+  console.log(list);
 }
+// console.log(obj.id);
+// console.log(getLocaleData("joblist"));
+// console.log(obj);

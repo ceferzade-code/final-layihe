@@ -19,6 +19,15 @@ img {
   margin: auto;
   box-sizing: border-box;
 }
+.section>form>p:nth-child(2){
+color: black;
+}
+.section>form>p{
+  color: rgba(255, 0, 0, 0.842);
+}
+.section>form>div>p:nth-child(2){
+  color: rgba(255, 0, 0, 0.842);
+  }
 input[type="text"],
 select {
   width: 100%;

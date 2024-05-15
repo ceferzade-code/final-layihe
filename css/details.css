@@ -29,21 +29,22 @@ section.workElan > div.detailsDiv > div.divImg > img {
 }
 .workTime > a {
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 10px 16px;
   background-color: black;
   color: white;
   border-radius: 8px;
-  
+
   align-items: flex-start;
   display: inline-block;
 }
 .workTime > a:hover {
   background-color: rgba(0, 0, 0, 0.847);
-  padding: 9px 16px;
+  /* padding: 9px 16px; */
 }
-/* .workTime > div {
-  align-items: flex-end;
-} */
+.workTime {
+  /* display: flex; */
+  align-items: flex-start;
+}
 .workTime > div > p {
   color: white;
   background-color: black;
@@ -55,7 +56,7 @@ section.workElan > div.detailsDiv > div.divImg > img {
 }
 .workTime > div > p:hover {
   background-color: rgba(0, 0, 0, 0.847);
-  padding: 11px 10px;
+  /* padding: 11px 10px; */
 }
 .workTime > div > a {
   color: white;
@@ -67,21 +68,24 @@ section.workElan > div.detailsDiv > div.divImg > img {
 }
 .workTime > div > a:hover {
   background-color: rgba(0, 0, 0, 0.847);
-  padding: 11px 10px;
+  /* padding: 11px 10px; */
 }
 .workName {
   flex: 1;
 }
-.workName>*{
-margin: 8px 0px;
+.workName > * {
+  margin: 8px 0px;
 }
-.workName>p{
+.workName >h2{
+  font-size: 20px;
+}
+.workName > p {
   color: gray;
 }
-.workName>p:nth-child(2){
+.workName > p:nth-child(2) {
   color: black;
 }
-.workName>p>i{
+.workName > p > i {
   width: 20px;
   text-align: center;
 }

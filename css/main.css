@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans";
+ 
 }
 section.headr {
   /* border: 1px solid black; */
@@ -25,6 +26,8 @@ section.headr > div.headrDiv > div.headrLeft > a {
   text-decoration: none;
   color: black;
   font-size: 25px;
+  font-family: "Advent Pro";
+  font-weight: 600;
 }
 section.headr > div.headrDiv > div.headrRight {
   display: flex;
@@ -75,7 +78,7 @@ section.headr
 section.headr > div.headrDiv > div.headrRight > div.newWork > a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   background-color: black;
   border-radius: 8px;
   padding: 10px 12px;
