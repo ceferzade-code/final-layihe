@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/homePace.css" />
-    <link rel="stylesheet" href="css/search.css" />
+    <!-- <link rel="stylesheet" href="css/search.css" /> -->
     <link rel="stylesheet" href="css/footer.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
@@ -64,7 +64,7 @@
     </div>
     <div class="homePace">
       <section class="search">
-        <form onsubmit="searchSubmit(event)" >
+        <form onsubmit="searchSubmit(event)">
           <label for="searchCompany">Axtarış</label><br />
           <input
             type="text"
@@ -75,17 +75,18 @@
           <br /><br />
           <label for="operating ">İş Rejimi</label><br />
           <select name="operating" id="operating">
-            <option value="butun">Bütün iş rejimləri</option>
-            <option value="muveqqeti">Müveqqəti</option>
-            <option value="kontrakt">Kontrakt</option>
-            <option value="tamis">Tam iş vaxtı</option>
-            <option value="yarimstat">Yarımştat</option>
-            <option value="tecrube">Təcrübə</option>
-            <option value="konullu">Könüllü</option>
+            <option>Bütün iş rejimləri</option>
+            <option>Müveqqəti</option>
+            <option>Kontrakt</option>
+            <option>Tam iş vaxtı</option>
+            <option>Yarımştat</option>
+            <option>Təcrübə</option>
+            <option>Könüllü</option>
           </select>
           <br /><br />
           <label for="country">Ölkə</label><br />
-          <select name="country" id="country">
+          <input type="text" name="country" id="country" placeholder="Baku..."/>
+          <!-- <select name="country" id="country">
             <option value="butunolke">Bütün ölkələr</option>
             <option value="sanfrancisco">
               San Francisco, California, United States
@@ -96,8 +97,8 @@
             </option>
             <option value="redmond">Redmond, Washington, United States</option>
             <option value="baku">Baku, Baki, Azerbaijan</option></select
-          ><br />
-          <input type="checkbox" id="checkbox" name="checkbox" />
+          ><br /> -->
+          <input type="checkbox" id="checkbox" name="checkbox" value="1" />
           <label for="checkbox">Uzaqdan</label>
           <br />
           <input type="submit" id="filtirSubmit" />
@@ -152,6 +153,8 @@
         hazırlanmışdır
       </p>
     </footer>
+
+    
 
     <script
       src="https://kit.fontawesome.com/ce92bdfaf6.js"
