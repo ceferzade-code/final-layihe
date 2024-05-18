@@ -27,6 +27,7 @@ section.workElan {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
 }
 section.workElan > a {
   display: flex;
@@ -129,4 +130,32 @@ input[type="submit"]:hover {
   section.workElan {
     width: 100%;
   }
+}
+div.noCity{
+  width: 200px;
+  background-color: rgb(255,5,5);
+  color: rgb(255,246,0);
+  padding: 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,60%);
+  margin: 0;
+}
+div.noCity>h2{
+  margin: 0;
+}
+section.pace{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+section.pace>div.paceLeft>h3{
+  display: none;
+}
+section.pace>div.paceGo{
+  display: flex;
+  gap: 5px;
 }

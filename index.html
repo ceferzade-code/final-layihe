@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>final layihe</title>
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,7 +86,12 @@
           </select>
           <br /><br />
           <label for="country">Ölkə</label><br />
-          <input type="text" name="country" id="country" placeholder="Baku..."/>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Baku..."
+          />
           <!-- <select name="country" id="country">
             <option value="butunolke">Bütün ölkələr</option>
             <option value="sanfrancisco">
@@ -105,7 +111,7 @@
         </form>
       </section>
       <section class="workElan">
-        <a href="#">
+        <!-- <a href="#">
           <div class="divImg">
             <img src="bankR.jpg" alt="error" />
           </div>
@@ -127,9 +133,22 @@
           <div class="workTime">
             <p>Tam iş vaxtı</p>
           </div>
-        </a>
+        </a> -->
       </section>
     </div>
+    <section class="pace">
+      <div class="paceLeft" onclick="paceLeftFunc()">
+        <h3><i class="fa-solid fa-arrow-left"></i> Əvvəlki</h3>
+      </div>
+      <div class="paceGo">
+        <h3>Səhifə</h3>
+        <h3 class="paceNum"></h3>
+        <h3 class="paceNumber"></h3>
+      </div>
+      <div class="paceRight" onclick="paceRightFunc()">
+        <h3>Sonrakı <i class="fa-solid fa-arrow-right"></i></h3>
+      </div>
+    </section>
     <hr />
     <footer>
       <section class="footer">
@@ -149,12 +168,10 @@
         pozulur.
       </p>
       <p>
-        <a href="https://www.ilkinsufi.com/">İlkin Sufi Məmmədov</a> tərəfindən
-        hazırlanmışdır
+        <a href="https://github.com/ceferzade-code">İsa Ceferzade </a>
+        tərəfindən hazırlanmışdır
       </p>
     </footer>
-
-    
 
     <script
       src="https://kit.fontawesome.com/ce92bdfaf6.js"
@@ -165,5 +182,6 @@
     <script src="js/mode.js"></script>
     <script src="js/index.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/pace.js"></script>
   </body>
 </html>

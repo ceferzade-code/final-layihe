@@ -50,7 +50,8 @@ function editSubmit(e) {
     // }
   }
   localStorage.setItem("joblist", JSON.stringify(newList));
+  location.replace("index.html");
 }
 
-console.log(hashIdInp.value);
-console.log(location.hash);
+// console.log(hashIdInp.value);
+// console.log(location.hash);

@@ -73,15 +73,29 @@ textarea#textArea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+/* 
 div.applicationDiv {
   display: flex;
   align-items: center;
-}
-div.applicationDiv > p {
+  align-items: flex-start
+} */
+/* div.applicationDiv > p {
   padding: 8px;
+} */
+.application {
+  flex: 1;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
 }
-div.applicationDiv > .application {
+/* div.applicationDiv >div{
+  width: 100%;
+}
+div.applicationDiv >div> .application {
   flex: 1;
   padding: 12px 20px;
   margin: 8px 0;
@@ -90,3 +104,6 @@ div.applicationDiv > .application {
   border-radius: 4px;
   box-sizing: border-box;
 }
+div.applicationDiv >div>p{
+  color: rgba(255, 0, 0, 0.842);
+} */

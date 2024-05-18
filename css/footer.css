@@ -13,10 +13,11 @@ footer>section.footer>div{
 }
 footer>section.footer>div>p{
     color: gray;
-    
+    font-size: 14px;
 }
 footer>section.footer>div.footerDiv2{
     text-align: right;
+    font-size: 14px;
 }
 footer>section.footer>div>a{
     text-decoration: none;
@@ -32,8 +33,10 @@ footer>section.footer>div>a:hover{
 footer>p{
     text-align: center;
     color: gray;
+    font-size: 14px;
 }
 footer>p>a{
     text-decoration: none;
-    color: gray;
+    color: rgb(65, 64, 64);
+    font-weight: 800;
 }

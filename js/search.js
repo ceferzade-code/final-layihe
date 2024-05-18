@@ -86,14 +86,20 @@ function searchSubmit(e) {
             </a>`;
           }
         } else {
-          let noCity = `<div class="noCity">
-            <h1> Təəssuf ki  şəhərdə iş elani tapilmadi...</h1>
+          renderHtml += `<div class="noCity">
+            <h2> Təəssuf ki ${searchCompanyInp.value.trim()}, ${countryInp.value.trim()} şəhərdə  tapilmadi...</h2>
           </div>`;
-          document.querySelector(".workElan").innerHTML = noCity;
           break;
         }
       }
     }
+    // else {
+    //   renderHtml += `<div class="noCity">
+    //         <h2> Təəssuf ki ${searchCompanyInp.value.trim()} iş elani tapilmadi...</h2>
+    //       </div>`;
+
+    //   break;
+    // }
   }
   document.querySelector(".workElan").innerHTML = renderHtml;
 }
