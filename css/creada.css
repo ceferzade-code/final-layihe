@@ -9,6 +9,7 @@ body {
 img {
   width: 200px;
   padding-top: 40px;
+  background-color:white;
 }
 .section {
   max-width: 801px;
@@ -37,6 +38,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  
 }
 #companyLog {
   width: 100%;
@@ -92,6 +94,15 @@ div.applicationDiv {
   box-sizing: border-box;
   width: 100%;
 }
+
+/* .colorBlack{
+  color: black;
+  background-color: white;
+}
+.colorWhite{
+  color: white;
+  background-color: black;
+} */
 /* div.applicationDiv >div{
   width: 100%;
 }

@@ -10,16 +10,19 @@ function searchSubmit(e) {
   let x = "";
   for (let i = 0; i < jobList.length; i++) {
     if (
-      jobList[i].workName.trim() == searchCompanyInp.value.trim() ||
+      jobList[i].workName.trim().toLowerCase() ==
+        searchCompanyInp.value.trim().toLowerCase() ||
       x == searchCompanyInp.value.trim()
     ) {
       //   console.log(jobList[i].workType);
       if (
-        jobList[i].workType.trim() == operatingInp.value.trim() ||
+        jobList[i].workType.trim().toLowerCase() ==
+          operatingInp.value.trim().toLowerCase() ||
         "Bütün iş rejimləri" == operatingInp.value.trim()
       ) {
         if (
-          jobList[i].location.trim() == countryInp.value.trim() ||
+          jobList[i].location.trim().toLowerCase() ==
+            countryInp.value.trim().toLowerCase() ||
           x == countryInp.value.trim()
         ) {
           if (
@@ -29,7 +32,7 @@ function searchSubmit(e) {
             // console.log(checkboxInp.value.trim());
             // for (let i = 0; i < jobList.length; i++) {
 
-            renderHtml += ` <a href="./details.html#${jobList[i].id}">
+            renderHtml += ` <a class="colorBlack" href="./details.html#${jobList[i].id}">
         <div class="divImg">
           <img src="${jobList[i].companyLog}" alt="error" />
         </div>
@@ -57,7 +60,7 @@ function searchSubmit(e) {
         </div>
         </a>`;
           } else if (checkboxInp.checked == false) {
-            renderHtml += ` <a href="./details.html#${jobList[i].id}">
+            renderHtml += ` <a class="colorBlack" href="./details.html#${jobList[i].id}">
             <div class="divImg">
               <img src="${jobList[i].companyLog}" alt="error" />
             </div>
@@ -85,12 +88,13 @@ function searchSubmit(e) {
             </div>
             </a>`;
           }
-        } else {
-          renderHtml += `<div class="noCity">
-            <h2> Təəssuf ki ${searchCompanyInp.value.trim()}, ${countryInp.value.trim()} şəhərdə  tapilmadi...</h2>
-          </div>`;
-          break;
         }
+        // else {
+        //   renderHtml += `<div class="noCity">
+        //     <h2> Təəssuf ki ${searchCompanyInp.value.trim()}, ${countryInp.value.trim()} şəhərdə  tapilmadi...</h2>
+        //   </div>`;
+        //   break;
+        // }
       }
     }
     // else {
@@ -101,6 +105,9 @@ function searchSubmit(e) {
     //   break;
     // }
   }
+  // renderHtml += `<div class="noCity">
+  //         <h2> Təəssuf ki ${searchCompanyInp.value.trim()} iş elani tapilmadi...</h2>
+  //       </div>`;
   document.querySelector(".workElan").innerHTML = renderHtml;
 }
 // }

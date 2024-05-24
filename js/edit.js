@@ -30,6 +30,7 @@ for (let i = 0; i < list.length; i++) {
 }
 
 function editSubmit(e) {
+  e.preventDefault();
   for (let i = 0; i < list.length; i++) {
     if (list[i].id != hashIdInp.value) {
       newList.push(list[i]);

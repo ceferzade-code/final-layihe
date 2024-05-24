@@ -29,29 +29,29 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <section class="headr">
-      <div class="headrDiv">
+  <body class="colorBlack">
+    <section class="headr colorBlack">
+      <div class="headrDiv colorBlack" >
         <div class="headrLeft">
-          <a href="index.html">Qarışqa</a>
+          <a class="colorBlack" href="index.html">Qarışqa</a>
         </div>
         <div class="headrRight">
-          <div class="modeBtn">
-            <button class="lightModeIcon">
+          <div class="modeBtn colorBlack">
+            <button class="lightModeIcon colorBlack">
               <i class="fa-regular fa-sun"></i>
             </button>
-            <button class="darkModeIcon" style="display: none">
+            <button class="darkModeIcon colorBlack" style="display: none">
               <i class="fa-regular fa-moon"></i>
             </button>
-            <div class="mode" style="display: none">
+            <div class="mode colorBlack" style="display: none">
               <p class="lightMode">Light</p>
               <p class="darkMode">Dark</p>
-              <p>System</p>
+              <p class="systemMode">System</p>
             </div>
           </div>
 
           <div class="newWork">
-            <a href="creade.html" target="_blank">
+            <a href="creade.html" target="_blank" class="backgroundBlack tt">
               <i class="fa-regular fa-star"> </i> İş yarat</a
             >
           </div>
@@ -71,11 +71,12 @@
             type="text"
             name="searchCompany"
             id="searchCompany"
+            class="colorBlack"
             placeholder="Başlıq, şirker ve s."
           />
           <br /><br />
           <label for="operating ">İş Rejimi</label><br />
-          <select name="operating" id="operating">
+          <select name="operating" class="colorBlack" id="operating">
             <option>Bütün iş rejimləri</option>
             <option>Müveqqəti</option>
             <option>Kontrakt</option>
@@ -89,6 +90,7 @@
           <input
             type="text"
             name="country"
+            class="colorBlack"
             id="country"
             placeholder="Baku..."
           />
@@ -107,10 +109,10 @@
           <input type="checkbox" id="checkbox" name="checkbox" value="1" />
           <label for="checkbox">Uzaqdan</label>
           <br />
-          <input type="submit" id="filtirSubmit" />
+          <input type="submit" class="backgroundBlack tt" id="filtirSubmit"  />
         </form>
       </section>
-      <section class="workElan">
+      <section  class="workElan colorBlack">
         <!-- <a href="#">
           <div class="divImg">
             <img src="bankR.jpg" alt="error" />
@@ -179,9 +181,9 @@
     ></script>
 
     <script src="js/tools.js"></script>
-    <script src="js/mode.js"></script>
     <script src="js/index.js"></script>
     <script src="js/search.js"></script>
     <script src="js/pace.js"></script>
+    <script src="js/mode.js"></script>
   </body>
 </html>

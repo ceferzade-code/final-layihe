@@ -33,9 +33,10 @@ section.workElan > a {
   display: flex;
   border: 1px solid #ccc;
   border-radius: 12px;
-  align-items: center;
+  /* align-items: center; */
+  align-items: stretch;
   padding: 12px;
-  color: black;
+  /* color: black; */
   text-decoration: none;
   gap: 12px;
 }
@@ -46,13 +47,16 @@ section.workElan > a > div > * {
   margin: 5px;
 }
 section.workElan > a > div.divImg {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  align-items: center;
 }
 section.workElan > a > div.divImg > img {
   width: 100%;
+  width: 100px;
+  height: 100px;
   border-radius: 12px;
   margin-right: 12px;
+  align-items: center;
 }
 section.workElan > a > div.workTime > p {
   border: 1px solid #ccc;
@@ -110,15 +114,15 @@ input[type="submit"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
   cursor: pointer;
   border-radius: 12px;
 }
 
-input[type="submit"]:hover {
+/* input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.918);
-}
+} */
 @media only screen and (max-width: 760px) {
   section.search {
     width: 100%;
@@ -159,3 +163,14 @@ section.pace>div.paceGo{
   display: flex;
   gap: 5px;
 }
+
+
+
+/* .colorBlack{
+  color: black;
+  background-color: white;
+}
+.colorWhite{
+  color: white;
+  background-color: black;
+} */

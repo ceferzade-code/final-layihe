@@ -8,9 +8,9 @@ section.workElan {
   margin: auto;
   padding: 8px;
 }
-section.workElan > div.detailsDiv > div.divImg {
-  /* position: relative; */
-}
+/* section.workElan > div.detailsDiv > div.divImg {
+  position: relative;
+} */
 section.workElan > div.detailsDiv > div.divImg > img {
   width: 100px;
   height: 100px;
@@ -76,7 +76,7 @@ section.workElan > div.detailsDiv > div.divImg > img {
 .workName > * {
   margin: 8px 0px;
 }
-.workName >h2{
+.workName > h2 {
   font-size: 20px;
 }
 .workName > p {
@@ -89,3 +89,12 @@ section.workElan > div.detailsDiv > div.divImg > img {
   width: 20px;
   text-align: center;
 }
+
+/* .colorBlack{
+  color: black;
+  background-color: white;
+}
+.colorWhite{
+  color: white;
+  background-color: black;
+} */

@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans";
- 
 }
 section.headr {
   /* border: 1px solid black; */
@@ -12,7 +11,7 @@ section.headr {
   right: 0;
   left: 0;
   z-index: 1;
-  background-color: white;
+  /* background-color: white; */
   /* justify-content: space-around; */
 }
 section.headr > div.headrDiv {
@@ -24,11 +23,12 @@ section.headr > div.headrDiv {
 }
 section.headr > div.headrDiv > div.headrLeft > a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
   font-size: 25px;
   font-family: "Advent Pro";
   font-weight: 600;
 }
+
 section.headr > div.headrDiv > div.headrRight {
   display: flex;
 }
@@ -57,7 +57,7 @@ section.headr > div.headrDiv > div.headrRight > div.modeBtn > div.mode {
   border-radius: 10px;
   width: 140px;
   z-index: 1;
-  background-color: white;
+  /* background-color: white; */
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
 }
 section.headr > div.headrDiv > div.headrRight > div.modeBtn > div.mode > p {
@@ -77,18 +77,52 @@ section.headr
 }
 section.headr > div.headrDiv > div.headrRight > div.newWork > a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
   font-size: 14px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 8px;
   padding: 10px 12px;
   display: inline-block;
 }
-section.headr > div.headrDiv > div.headrRight > div.newWork > a:hover {
+/* section.headr > div.headrDiv > div.headrRight > div.newWork > a:hover {
   background-color: rgba(0, 0, 0, 0.806);
-}
+} */
 /* @media only screen and (max-width: 1200px) {
   section.headr {
     justify-content: space-between;
   }
+} */
+.colorBlack {
+  color: black;
+  background-color: white;
+}
+.colorWhite {
+  color: white;
+  background-color: black;
+}
+
+.backgroundBlack {
+  color: white;
+  background-color: black;
+}
+.backgroundBlack:hover {
+  background-color: rgb(54, 54, 54);
+}
+.backgroundWhite {
+  color: black;
+  background-color: white;
+}
+.backgroundWhite:hover {
+  background-color: rgb(161, 161, 161);
+}
+
+/* .colorWhite:hover{
+  background-color: rgba(0, 0, 0, 0.806);
+} */
+/* .darkModeColorWhite{
+  color:white;
+  background-color: black;
+}
+.darkModeColorBlack{
+color: black;
 } */

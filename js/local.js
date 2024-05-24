@@ -104,6 +104,7 @@ function createSubmit(e) {
     companyLogInp.value = "";
     textAreaInp.value = "";
     applicationInp.value = "";
+    // location.replace("index.html");
   }
 
   // console.log(joblis);

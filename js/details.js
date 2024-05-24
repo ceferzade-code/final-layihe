@@ -2,7 +2,7 @@ let obj = isHashExist();
 if (obj) {
   let detailsHtml = "";
   detailsHtml = `
-  <div class = "detailsDiv">
+  <div class = "detailsDiv colorBlack">
          <div class="divImg">
            <img src="${obj.companyLog}" alt="error" />
          </div>
@@ -22,8 +22,8 @@ if (obj) {
          <div class="workTime">
            <a href="mailto:${obj.application}">Müraciət et</a>
            <div>
-          <p id = "deletList" onclick="delFunction(event)"><i class="fa-solid fa-trash-can"></i></p>
-          <a href="edit.html#${obj.id}"><i class="fa-solid fa-pen-to-square"></i></a>
+          <p id = "deletList" class="backgroundBlack tt" onclick="delFunction(event)"><i class="fa-solid fa-trash-can"></i></p>
+          <a class="backgroundBlack tt" href="edit.html#${obj.id}"><i class="fa-solid fa-pen-to-square"></i></a>
           </div>
          </div>
        </div>
