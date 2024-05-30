@@ -10,19 +10,25 @@ function searchSubmit(e) {
   let x = "";
   for (let i = 0; i < jobList.length; i++) {
     if (
-      jobList[i].workName.trim().toLowerCase() ==
-        searchCompanyInp.value.trim().toLowerCase() ||
+      jobList[i].workName
+        .trim()
+        .toLowerCase()
+        .includes(searchCompanyInp.value.trim().toLowerCase()) ||
       x == searchCompanyInp.value.trim()
     ) {
       //   console.log(jobList[i].workType);
       if (
-        jobList[i].workType.trim().toLowerCase() ==
-          operatingInp.value.trim().toLowerCase() ||
+        jobList[i].workType
+          .trim()
+          .toLowerCase()
+          .includes(operatingInp.value.trim().toLowerCase()) ||
         "Bütün iş rejimləri" == operatingInp.value.trim()
       ) {
         if (
-          jobList[i].location.trim().toLowerCase() ==
-            countryInp.value.trim().toLowerCase() ||
+          jobList[i].location
+            .trim()
+            .toLowerCase()
+            .includes(countryInp.value.trim().toLowerCase()) ||
           x == countryInp.value.trim()
         ) {
           if (

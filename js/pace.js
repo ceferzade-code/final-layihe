@@ -26,7 +26,7 @@ for (; i < list.length; i++) {
 let q = 0;
 // console.log(tt);
 let renderHtml = "";
-for (let i = 0; i < z[q].length; i++) {
+for (let i = 0; i < z[q]?.length; i++) {
   renderHtml += ` <a class="colorBlack" href="./details.html#${z[q][i].id}">
   <div class="divImg">
     <img src="${z[q][i].companyLog}" alt="error" />
