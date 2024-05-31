@@ -114,6 +114,13 @@ function searchSubmit(e) {
   // renderHtml += `<div class="noCity">
   //         <h2> Təəssuf ki ${searchCompanyInp.value.trim()} iş elani tapilmadi...</h2>
   //       </div>`;
-  document.querySelector(".workElan").innerHTML = renderHtml;
+  if(renderHtml==""){
+    document.querySelector(".workElan").innerHTML = `<div class="noCity">
+             <h2> Təəssuf ki isteyinize uyqun iş elani tapilmadi...     <i class="fa-solid fa-face-sad-tear"></i></h2>
+           </div>`;
+  }else{
+    document.querySelector(".workElan").innerHTML = renderHtml;
+  }
+  
 }
 // }

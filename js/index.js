@@ -1,6 +1,6 @@
 function renderJobs(filter) {
   // e.preventDefault();
-  let jobList = JSON.parse(localStorage.getItem("joblist"));
+  let jobList = JSON.parse(localStorage.getItem("joblist") || '[]');
 
   // if (filter.workType) {
   //   jobList = jobList.filter(() => {});

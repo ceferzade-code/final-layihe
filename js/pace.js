@@ -1,4 +1,4 @@
-let list = JSON.parse(localStorage.getItem("joblist"));
+let list = JSON.parse(localStorage.getItem("joblist") ||'[]');
 let pace = Math.ceil(list.length / 3);
 document.querySelector(".paceNumber").innerText = "/" + pace;
 let x = [];
