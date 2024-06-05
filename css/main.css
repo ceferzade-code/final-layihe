@@ -100,6 +100,10 @@ section.headr > div.headrDiv > div.headrRight > div.newWork > a {
   color: white;
   background-color: black;
 }
+.darkBorder {
+  /* border: 1px solid hsl(0 0% 14.9%); */
+  border: 1px solid red;
+}
 
 .backgroundBlack {
   color: white;

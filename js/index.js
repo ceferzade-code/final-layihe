@@ -11,7 +11,7 @@ function renderJobs(filter) {
   let renderHtml = "";
 
   for (let i = 0; i < jobList.length; i++) {
-    renderHtml += `<a class="colorBlack" href="./details.html#${jobList[i].id}"  >
+    renderHtml += `<a class="colorBlack xx" href="./details.html#${jobList[i].id}"  >
 <div class="divImg">
   <img src="${jobList[i].companyLog}" alt="error" />
 </div>

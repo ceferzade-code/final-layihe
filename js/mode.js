@@ -7,12 +7,14 @@ $(document).ready(function () {
     $(".darkModeIcon").css("display", "none");
     $(".lightModeIcon").css("display", "block");
     $(".colorBlack").removeClass("colorWhite");
+    $(".xx").removeClass("darkBorder");
     $(".tt").removeClass("backgroundWhite");
     $(".tt").addClass("backgroundBlack");
   } else if (theme == "dark") {
     $(".darkModeIcon").css("display", "block");
     $(".lightModeIcon").css("display", "none");
     $(".colorBlack").addClass(" colorWhite");
+    $(".xx").addClass("darkBorder");
     $(".tt").removeClass("backgroundBlack");
     $(".tt").addClass("backgroundWhite");
   }
@@ -26,6 +28,7 @@ $(document).ready(function () {
     $(".darkModeIcon").css("display", "none");
     $(".lightModeIcon").css("display", "block");
     $(".colorBlack").removeClass("colorWhite");
+    $(".xx").removeClass("darkBorder");
     $(".tt").removeClass("backgroundWhite");
     $(".tt").addClass("backgroundBlack");
     // console.log(theme);
@@ -37,6 +40,7 @@ $(document).ready(function () {
     $(".darkModeIcon").css("display", "block");
     $(".lightModeIcon").css("display", "none");
     $(".colorBlack").addClass("colorWhite");
+    $(".xx").addClass("darkBorder");
     $(".tt").removeClass("backgroundBlackf");
     $(".tt").addClass("backgroundWhite");
   });
